@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="th" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weeraphap (Opal) | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index-BeW9ciK_.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DkQj3Ybw.css">
+  </head>
+  <body class="bg-zinc-950 text-zinc-100 antialiased selection:bg-emerald-500 selection:text-zinc-950">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 border-b border-zinc-800/80 bg-zinc-950/80 backdrop-blur-md">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+        <a href="#" class="text-lg font-bold tracking-tight text-white">
+          OPAL<span class="text-emerald-400">.DEV</span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden items-center gap-8 text-sm font-medium text-zinc-400 md:flex">
+          <a href="#about" class="transition hover:text-white">เกี่ยวกับผม</a>
+          <a href="#skills" class="transition hover:text-white">ทักษะ</a>
+          <a href="#projects" class="transition hover:text-white">ผลงาน</a>
+          <a
+            href="#contact"
+            class="rounded-lg bg-emerald-500 px-4 py-2 font-semibold text-zinc-950 transition hover:bg-emerald-400"
+          >
+            ติดต่อผม
+          </a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-btn"
+          class="rounded-lg border border-zinc-800 p-2 text-zinc-400 hover:text-white md:hidden"
+          aria-label="เปิดเมนู"
+        >
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown -->
+      <div id="mobile-menu" class="hidden border-t border-zinc-800 bg-zinc-950 px-6 py-4 md:hidden">
+        <div class="flex flex-col gap-4 text-sm font-medium text-zinc-300">
+          <a href="#about" class="hover:text-emerald-400">เกี่ยวกับผม</a>
+          <a href="#skills" class="hover:text-emerald-400">ทักษะ</a>
+          <a href="#projects" class="hover:text-emerald-400">ผลงาน</a>
+          <a href="#contact" class="text-emerald-400">ติดต่อผม</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-5xl px-6">
+      <!-- Hero Section -->
+      <section class="flex min-h-[82vh] flex-col justify-center py-20">
+        <div class="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3.5 py-1.5 text-xs font-medium text-emerald-400">
+          <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+          พร้อมรับงาน Freelance & โปรเจกต์ใหม่
+        </div>
+
+        <h1 class="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-6xl">
+          สวัสดีครับ ผม <span class="text-emerald-400">วีรภาพ (โอปอ)</span><br />
+          นักพัฒนาเว็บไซต์ & ระบบ IoT
+        </h1>
+
+        <p class="mt-6 max-w-2xl text-base leading-relaxed text-zinc-400 sm:text-lg">
+          Hello, my name is Weeraphap (Opal). ออกแบบและพัฒนาเว็บไซต์สมัยใหม่ที่โหลดไว ใช้งานง่าย
+          ควบคู่กับการพัฒนาระบบฮาร์ดแวร์และโครงข่ายเพื่อเปลี่ยนไอเดียให้ใช้งานได้จริง
+        </p>
+
+        <div class="mt-10 flex flex-wrap items-center gap-4">
+          <a
+            href="#projects"
+            class="rounded-xl bg-emerald-500 px-6 py-3.5 text-sm font-semibold text-zinc-950 transition hover:bg-emerald-400"
+          >
+            ดูผลงานทั้งหมด
+          </a>
+          <a
+            href="#contact"
+            class="rounded-xl border border-zinc-800 bg-zinc-900/60 px-6 py-3.5 text-sm font-semibold text-white transition hover:border-zinc-700 hover:bg-zinc-900"
+          >
+            พูดคุย / ติดต่อร่วมงาน
+          </a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="border-t border-zinc-900 py-20">
+        <div class="grid gap-12 md:grid-cols-12 md:items-center">
+          <div class="md:col-span-5">
+            <div class="flex aspect-square flex-col justify-between overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
+              <div class="flex items-center gap-2">
+                <span class="h-3 w-3 rounded-full bg-red-500/80"></span>
+                <span class="h-3 w-3 rounded-full bg-yellow-500/80"></span>
+                <span class="h-3 w-3 rounded-full bg-emerald-500/80"></span>
+              </div>
+              <pre class="overflow-x-auto text-xs leading-relaxed text-zinc-300"><code>const profile = {
+  name: "Weeraphap",
+  nickname: "Opal",
+  role: "Web & IoT Developer",
+  focus: ["Frontend", "Tailwind CSS", "ESP32"],
+  status: "Available for projects"
+};</code></pre>
+              <p class="text-xs text-zinc-500">// สามารถเปลี่ยนกล่องนี้เป็นรูปโปรไฟล์ของคุณได้</p>
+            </div>
+          </div>
+
+          <div class="md:col-span-7">
+            <h2 class="text-sm font-semibold uppercase tracking-wider text-emerald-400">About Me</h2>
+            <h3 class="mt-2 text-2xl font-bold text-white sm:text-3xl">
+              เน้นงานที่เรียบง่าย คมชัด และใช้งานได้จริง
+            </h3>
+            <p class="mt-4 leading-relaxed text-zinc-400">
+              ผมสนใจด้านการพัฒนา Front-end ด้วย HTML, JavaScript และ Tailwind CSS รวมถึงการเชื่อมต่อระบบฮาร์ดแวร์อย่าง
+              ESP32 และเซนเซอร์ต่าง ๆ เพื่อสร้างโซลูชันที่ตอบโจทย์ทั้งซอฟต์แวร์และฮาร์ดแวร์
+            </p>
+
+            <div class="mt-8 grid grid-cols-3 gap-4 border-t border-zinc-800/80 pt-6">
+              <div>
+                <p class="text-2xl font-bold text-white">Web</p>
+                <p class="mt-1 text-xs text-zinc-400">Modern UI & Responsive</p>
+              </div>
+              <div>
+                <p class="text-2xl font-bold text-white">IoT</p>
+                <p class="mt-1 text-xs text-zinc-400">ESP32 & Smart Systems</p>
+              </div>
+              <div>
+                <p class="text-2xl font-bold text-white">IT</p>
+                <p class="mt-1 text-xs text-zinc-400">Hardware & Networking</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="border-t border-zinc-900 py-20">
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-emerald-400">Tech Stack</h2>
+        <h3 class="mt-2 text-2xl font-bold text-white sm:text-3xl">ทักษะและเครื่องมือที่ใช้</h3>
+
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-6">
+            <h4 class="text-lg font-semibold text-white">Web Development</h4>
+            <p class="mt-2 text-sm text-zinc-400">สร้างหน้าเว็บ Responsive และโต้ตอบกับผู้ใช้ได้ลื่นไหล</p>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="rounded-md bg-zinc-800 px-2.5 py-1 text-xs text-zinc-200">HTML5</span>
+              <span class="rounded-md bg-zinc-800 px-2.5 py-1 text-xs text-zinc-200">Tailwind CSS</span>
+              <span class="rounded-md bg-zinc-800 px-2.5 py-1 text-xs text-zinc-200">JavaScript</span>
+              <span class="rounded-md bg-zinc-800 px-2.5 py-1 text-xs text-zinc-200">Vite</span>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-6">
+            <h4 class="text-lg font-semibold text-white">IoT & Hardware</h4>
+            <p class="mt-2 text-sm text-zinc-400">เขียนโค้ดควบคุมบอร์ดไมโครคอนโทรลเลอร์และระบบอัตโนมัติ</p>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="rounded-md bg-zinc-800 px-2.5 py-1 text-xs text-zinc-200">ESP32</span>
+              <span class="rounded-md bg-zinc-800 px-2.5 py-1 text-xs text-zinc-200">LoRa</span>
+              <span class="rounded-md bg-zinc-800 px-2.5 py-1 text-xs text-zinc-200">Blynk / MQTT</span>
+              <span class="rounded-md bg-zinc-800 px-2.5 py-1 text-xs text-zinc-200">Sensors</span>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-6">
+            <h4 class="text-lg font-semibold text-white">IT & Design Tools</h4>
+            <p class="mt-2 text-sm text-zinc-400">ดูแลระบบเครือข่าย ประกอบคอมพิวเตอร์ และออกแบบกราฟิก</p>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="rounded-md bg-zinc-800 px-2.5 py-1 text-xs text-zinc-200">VS Code</span>
+              <span class="rounded-md bg-zinc-800 px-2.5 py-1 text-xs text-zinc-200">Networking</span>
+              <span class="rounded-md bg-zinc-800 px-2.5 py-1 text-xs text-zinc-200">Photoshop / AI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="border-t border-zinc-900 py-20">
+        <div>
+          <h2 class="text-sm font-semibold uppercase tracking-wider text-emerald-400">Projects</h2>
+          <h3 class="mt-2 text-2xl font-bold text-white sm:text-3xl">ผลงานที่ผ่านมา</h3>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <article class="group flex flex-col justify-between rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-6 transition hover:-translate-y-1 hover:border-emerald-500/50">
+            <div>
+              <div class="mb-4 flex items-center justify-between text-xs text-zinc-400">
+                <span>Web Design</span>
+                <span class="text-emerald-400">2026</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-emerald-400">เว็บไซต์ร้านอาหาร & แบรนด์</h4>
+              <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                ออกแบบหน้าเว็บแสดงเมนู บรรยากาศร้าน และข้อมูลติดต่อ รองรับการเปิดดูผ่านมือถืออย่างสมบูรณ์
+              </p>
+            </div>
+            <div class="mt-6 flex flex-wrap gap-2 border-t border-zinc-800/80 pt-4 text-xs text-zinc-300">
+              <span>HTML</span> • <span>Tailwind CSS</span> • <span>JS</span>
+            </div>
+          </article>
+
+          <article class="group flex flex-col justify-between rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-6 transition hover:-translate-y-1 hover:border-emerald-500/50">
+            <div>
+              <div class="mb-4 flex items-center justify-between text-xs text-zinc-400">
+                <span>IoT System</span>
+                <span class="text-emerald-400">2026</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-emerald-400">ระบบฟาร์มอัจฉริยะพลังงานแสงอาทิตย์</h4>
+              <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                ระบบควบคุมการให้น้ำและวัดความชื้นในดินอัตโนมัติด้วย ESP32 สั่งงานและดูค่าผ่านแอปพลิเคชัน
+              </p>
+            </div>
+            <div class="mt-6 flex flex-wrap gap-2 border-t border-zinc-800/80 pt-4 text-xs text-zinc-300">
+              <span>ESP32</span> • <span>Solar</span> • <span>Blynk</span>
+            </div>
+          </article>
+
+          <article class="group flex flex-col justify-between rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-6 transition hover:-translate-y-1 hover:border-emerald-500/50">
+            <div>
+              <div class="mb-4 flex items-center justify-between text-xs text-zinc-400">
+                <span>Portfolio</span>
+                <span class="text-emerald-400">2026</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-emerald-400">Personal Landing Page</h4>
+              <p class="mt-2 text-sm leading-relaxed text-zinc-400">
+                เว็บไซต์แนะนำตัวและรวบรวมผลงาน พัฒนาด้วย Vite และ Tailwind CSS v4 เน้นความเร็วและดีไซน์มินิมอล
+              </p>
+            </div>
+            <div class="mt-6 flex flex-wrap gap-2 border-t border-zinc-800/80 pt-4 text-xs text-zinc-300">
+              <span>Vite</span> • <span>Tailwind v4</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="border-t border-zinc-900 py-20">
+        <div class="rounded-3xl border border-zinc-800 bg-zinc-900/50 p-8 text-center sm:p-12">
+          <h2 class="text-2xl font-bold text-white sm:text-3xl">สนใจร่วมงานหรือสอบถามข้อมูลเพิ่มเติม?</h2>
+          <p class="mx-auto mt-3 max-w-xl text-sm text-zinc-400 sm:text-base">
+            สามารถทักมาพูดคุยเรื่องโปรเจกต์เว็บไซต์ งานระบบ หรือแลกเปลี่ยนความรู้กันได้ตลอดครับ
+          </p>
+
+          <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <button
+              id="copy-email-btn"
+              data-email="weeraphap@email.com"
+              class="cursor-pointer rounded-xl bg-emerald-500 px-6 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-emerald-400"
+            >
+              คัดลอกอีเมลติดต่อ
+            </button>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noreferrer"
+              class="rounded-xl border border-zinc-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-zinc-800"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-zinc-900 py-8 text-center text-xs text-zinc-500">
+      © 2026 Weeraphap (Opal). Built with Vite & Tailwind CSS.
+    </footer>
+
+  </body>
+</html>
